@@ -14,6 +14,7 @@ export const Coin: FC<IProps> = ({coin}) => {
             <h3>{name}</h3>
             <h4>{symbol}</h4>
             <br/>
+            <br/>
         </div>
     );
 };
