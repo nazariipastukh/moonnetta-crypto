@@ -1,0 +1,52 @@
+.sideBar{
+    width: 14vw;
+    margin: 2vh  2vw;
+    border-top: 1px #1f1f1f solid;
+    padding: 4vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10vh;
+}
+
+.sideBar a{
+    text-decoration: none;
+    color: #e1f0f3;
+    margin-bottom: 3vh;
+}
+
+.icon {
+    width: 15px;
+    margin-right: 0.7vw;
+}
+
+.sideLink{
+    display: flex;
+    align-items: center;
+}
+
+.socials{
+    width: 40px;
+}
+
+.credits{
+    margin-top: 17vh;
+    border-top: 1px #1f1f1f solid;
+    padding: 2vh 0 0 0;
+    width: 14vw;
+    justify-content: space-between;
+}
+
+.credits p a{
+    color: #6ee2f5;
+}
+
+.socialsWrap{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    font-size: 13px;
+}

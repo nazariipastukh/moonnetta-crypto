@@ -2,8 +2,9 @@ import {useEffect, useState} from "react";
 import {coinsService} from "../../services/coinsService";
 import {Coin} from "./Coin";
 import {ICoin} from "../../interfaces/coinInterface";
+import styles from './List.module.css'
 
-export const MainComponent = () => {
+export const CoinsListComponent = () => {
     const [coins, setCoins] = useState<ICoin[]>([])
 
     useEffect(() => {
@@ -11,7 +12,7 @@ export const MainComponent = () => {
     },[])
 
     return (
-        <div>
+        <div className={styles.listWrapper}>
             {
                 coins.map(coin => <Coin coin={coin} key={coin.id}/>)
             }

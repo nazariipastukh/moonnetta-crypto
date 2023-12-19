@@ -1,7 +1,7 @@
 const coins = '/coins'
 
 const urls = {
-    list: `${coins}/list`
+    list: `${coins}/markets?vs_currency=usd`
 }
 
 export {
