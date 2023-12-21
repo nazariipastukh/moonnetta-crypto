@@ -4,7 +4,7 @@ import {MaterialUISwitch} from "../Switch/Switch";
 import {useState} from "react";
 
 export const Header = () => {
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(true)
 
     const handleCheck = () => {
         setChecked(!checked)

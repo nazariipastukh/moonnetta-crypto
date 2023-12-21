@@ -1,0 +1,56 @@
+.coinWrapper{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px #1f1f1f solid;
+    height: 9vh;
+}
+
+.coinWrapper img{
+    width: 30px;
+    margin-right: 1vw;
+}
+
+.rank{
+    width: 3vw;
+    margin-left: 1vw
+}
+
+.symbol{
+    font-weight: 200;
+}
+
+.naming{
+    display: flex;
+    align-items: center;
+    width: 22vw;
+}
+
+.info{
+    display: flex;
+}
+
+.info p{
+    min-width: 7vw;
+   text-align: right;
+}
+
+.redPrice{
+    color: #EA3943
+}
+
+.greenPrice{
+    color: #16C784
+}
+
+.market{
+    width: 12.5vw;
+    margin-right: 2vw;
+}
+
+.volume{
+    width: 10vw;
+}
+
+.supply{
+    width: 15.5vw;
+}

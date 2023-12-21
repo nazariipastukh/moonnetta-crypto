@@ -17,8 +17,6 @@ import whatsapp from '../../assets/socials/whatsapp.png'
 import styles from './SideBar.module.css'
 
 export const SideBar = () => {
-
-
     return (
         <div className={styles.sideBar}>
             <NavLink className={styles.sideLink} to={'/main'}>
@@ -53,8 +51,6 @@ export const SideBar = () => {
                 <img className={styles.icon} src={holdingsIcon} alt={'icon'}/>
                 Companies Holdings
             </NavLink>
-
-
 
             <section className={styles.credits}>
                 <p>

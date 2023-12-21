@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {coinsService} from "../../services/coinsService";
-import {Coin} from "./Coin";
+import {Coin} from "./ListElement/Coin";
 import {ICoin} from "../../interfaces/coinInterface";
 import styles from './List.module.css'
 
