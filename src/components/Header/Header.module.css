@@ -14,3 +14,21 @@
 .logo{
     width: 14vw;
 }
+
+.rightPart{
+    display: flex;
+    width: 16vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+}
+
+.select p{
+   margin-right: 1vw;
+    font-size: 14px;
+    color: #A4A4A4
+}
