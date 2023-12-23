@@ -1,6 +1,36 @@
-.listWrapper{
+.listWrapper {
     background-color: black;
     width: 100%;
     border-radius: 25px;
-    padding: 1vw;
+    padding: 1vh 1vw;
+}
+
+h5 {
+    color: #555555;
+    margin: 3vh 1.3vw 2vh 1vw;
+}
+
+.listHeader {
+    display: flex;
+}
+
+.marketValues {
+    display: flex;
+    margin-left: 18.4vw;
+}
+
+.percentage {
+    margin-left: 3.3vw;
+}
+
+.market {
+    margin-left: 6.7vw;
+}
+
+.volume {
+    margin-left: 5.5vw;
+}
+
+.supply {
+    margin-left: 7vw;
 }

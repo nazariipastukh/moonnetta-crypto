@@ -39,7 +39,8 @@ p {
 }
 
 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
-    background-color: #111111;
+    background-color: #1f1f1f;
+    border: #1f1f1f 1px solid;
 }
 
 .ant-select-single .ant-select-selector {
@@ -53,3 +54,26 @@ p {
 .ant-select-single.ant-select-open .ant-select-selection-item {
     color: #e1f0f3;
 }
+
+.ant-input{
+    background-color: #1f1f1f;
+    border: #1f1f1f 1px solid;
+    height: 4.5vh;
+    width: 100vw;
+    color: #e1f0f3;
+}
+
+.ant-btn-primary{
+    background-color: #1f1f1f;
+
+}
+
+.ant-input-search .ant-input-search-button{
+    margin-left: 0.1vw;
+    height: 4.5vh;
+}
+
+.ant-input::placeholder{
+    color: #A4A4A4;
+}
+

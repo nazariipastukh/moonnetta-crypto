@@ -57,11 +57,11 @@ export const SideBar = () => {
                     Need Help? <a href={'mailto:nazariipastukh2@gmail.com'}> Contact Us</a>
                 </p>
                 <section className={styles.socialsWrap}>
-                    <a href={'https://github.com/nazariipastukh'} target="_blank" rel="noreferrer">
+                    <a href={'https://t.me/nazarpastuh'} target="_blank" rel="noreferrer">
                         <img className={styles.socials} src={telegram}
                              alt={'telegram'}/>
                     </a>
-                    <a href={'https://github.com/nazariipastukh'} target="_blank" rel="noreferrer">
+                    <a href={'https://www.linkedin.com/in/nazarii-pastukh-77015a279/'} target="_blank" rel="noreferrer">
                         <img className={styles.socials} src={linkedin}
                              alt={'linkedin'}/>
                     </a>
