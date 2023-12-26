@@ -1,5 +1,6 @@
-import {ICoin} from "../../../interfaces/coinInterface";
 import {FC} from "react";
+
+import {ICoin} from "../../../interfaces";
 import styles from './Coin.module.css'
 
 interface IProps {
@@ -16,15 +17,12 @@ export const Coin: FC<IProps> = ({coin}) => {
         market_cap,
         market_cap_rank,
         total_volume,
-        high_24h,
-        low_24h,
         price_change_percentage_24h,
         circulating_supply,
-        total_supply
     } = coin
 
     return (
-        <div className={styles.coinWrapper}>
+        <section className={styles.coinWrapper}>
             <section className={styles.naming}>
                 <p className={styles.rank}>
                     {market_cap_rank}
@@ -64,6 +62,6 @@ export const Coin: FC<IProps> = ({coin}) => {
                     {circulating_supply.toLocaleString('en-US')} {symbol.toUpperCase()}
                 </p>
             </section>
-        </div>
+        </section>
     );
 };

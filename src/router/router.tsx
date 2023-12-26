@@ -1,8 +1,7 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
-import {MainPage} from "../pages/MainPage/MainPage";
-import {MainLayout} from "../layouts/MainLayout";
-import {TrendingPage} from "../pages/Trending/TrendingPage";
-import {NFTsPage} from "../pages/NFTsPage/NFTsPage";
+
+import {MainLayout} from "../layouts";
+import {MainPage, NFTsPage, TrendingPage} from "../pages";
 
 const router = createBrowserRouter([
     {

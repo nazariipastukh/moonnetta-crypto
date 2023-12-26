@@ -1,5 +1,5 @@
-.header{
-    width: 96.5vw;
+header {
+    width: 96vw;
     height: 12vh;
     display: flex;
     align-items: center;
@@ -11,24 +11,17 @@
     padding: 0 2vw;
 }
 
-.logo{
+.logo {
     width: 14vw;
 }
 
-.rightPart{
+.rightPart {
     display: flex;
-    width: 16vw;
+    width: 13.5vw;
     justify-content: space-between;
     align-items: center;
 }
 
-.select{
-    display: flex;
-    align-items: center;
-}
-
-.select p{
-   margin-right: 1vw;
-    font-size: 14px;
-    color: #A4A4A4
+.user {
+    width: 2vw;
 }

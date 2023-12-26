@@ -1,9 +1,12 @@
-import styles from './Header.module.css'
-import logo from '../../assets/logo.jpg'
-import {MaterialUISwitch} from "../Switch/Switch";
 import {useState} from "react";
-import {CurrencySelect} from "../CurrencySelect/CurrencySelect";
-import {SearchComponent} from "../SearchComponent/SearchComponent";
+
+import {MaterialUISwitch} from "../Switch";
+import {CurrencySelect} from "../CurrencySelect";
+import {SearchComponent} from "../SearchComponent";
+
+import logo from '../../assets/logo.jpg'
+import userLogo from '../../assets/icons/circle-user.png'
+import styles from './Header.module.css'
 
 export const Header = () => {
     const [checked, setChecked] = useState(true)
@@ -13,7 +16,7 @@ export const Header = () => {
     }
 
     return (
-        <div className={styles.header}>
+        <header>
             <img className={styles.logo} src={logo} alt={'logo'}/>
 
             <section>
@@ -21,16 +24,16 @@ export const Header = () => {
             </section>
 
             <section className={styles.rightPart}>
-                <section className={styles.select}>
-                    <p>Currency</p>
+                <section>
                     <CurrencySelect/>
                 </section>
 
-                <section className={styles.switcher}>
+                <section>
                     <MaterialUISwitch checked={checked} onClick={handleCheck} color="primary"/>
                 </section>
-            </section>
 
-        </div>
+                <img className={styles.user} src={userLogo} alt={'user'}/>
+            </section>
+        </header>
     );
 };

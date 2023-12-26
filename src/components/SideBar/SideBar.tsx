@@ -18,7 +18,7 @@ import styles from './SideBar.module.css'
 
 export const SideBar = () => {
     return (
-        <div className={styles.sideBar}>
+        <section className={styles.sideBar}>
             <NavLink className={styles.sideLink} to={'/main'}>
                 <img className={styles.icon} src={coinIcon} alt={'icon'}/>
                 Cryptocurrencies
@@ -75,9 +75,9 @@ export const SideBar = () => {
                     </a>
                 </section>
                 <p className={styles.footer}>
-                    © 2023 Data provided by CoinGecko
+                    © 2023 Data provided by <a href={'https://www.coingecko.com/api/documentation'}>CoinGecko</a>
                 </p>
             </section>
-        </div>
+        </section>
     );
 };

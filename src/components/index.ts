@@ -1,0 +1,6 @@
+export * from './Switch'
+export * from './SideBar'
+export * from './Header'
+export * from './SearchComponent'
+export * from './CurrencySelect'
+export * from './MainComponent'

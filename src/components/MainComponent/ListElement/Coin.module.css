@@ -1,56 +1,56 @@
-.coinWrapper{
+.coinWrapper {
     display: flex;
     align-items: center;
     border-bottom: 1px #1f1f1f solid;
     height: 9vh;
 }
 
-.coinWrapper img{
+.coinWrapper img {
     width: 30px;
     margin-right: 1vw;
 }
 
-.rank{
+.rank {
     width: 3vw;
     margin-left: 1vw
 }
 
-.symbol{
+.symbol {
     font-weight: 200;
 }
 
-.naming{
+.naming {
     display: flex;
     align-items: center;
     width: 22vw;
 }
 
-.info{
+.info {
     display: flex;
 }
 
-.info p{
+.info p {
     min-width: 7vw;
-   text-align: right;
+    text-align: right;
 }
 
-.redPrice{
+.redPrice {
     color: #EA3943
 }
 
-.greenPrice{
+.greenPrice {
     color: #16C784
 }
 
-.market{
+.market {
     width: 12.5vw;
     margin-right: 2vw;
 }
 
-.volume{
+.volume {
     width: 10vw;
 }
 
-.supply{
+.supply {
     width: 15.5vw;
 }

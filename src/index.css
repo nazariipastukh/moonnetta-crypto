@@ -55,7 +55,7 @@ p {
     color: #e1f0f3;
 }
 
-.ant-input{
+.ant-input {
     background-color: #1f1f1f;
     border: #1f1f1f 1px solid;
     height: 4.5vh;
@@ -63,17 +63,15 @@ p {
     color: #e1f0f3;
 }
 
-.ant-btn-primary{
+.ant-btn-primary {
     background-color: #1f1f1f;
-
 }
 
-.ant-input-search .ant-input-search-button{
+.ant-input-search .ant-input-search-button {
     margin-left: 0.1vw;
     height: 4.5vh;
 }
 
-.ant-input::placeholder{
+.ant-input::placeholder {
     color: #A4A4A4;
 }
-

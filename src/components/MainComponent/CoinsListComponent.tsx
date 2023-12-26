@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
-import {coinsService} from "../../services/coinsService";
-import {Coin} from "./ListElement/Coin";
-import {ICoin} from "../../interfaces/coinInterface";
+
+import {coinsService} from "../../services";
+import {Coin} from "./ListElement";
+import {ICoin} from "../../interfaces";
 import styles from './List.module.css'
 
 export const CoinsListComponent = () => {
@@ -12,10 +13,11 @@ export const CoinsListComponent = () => {
     }, [])
 
     return (
-        <div className={styles.listWrapper}>
+        <section className={styles.listWrapper}>
             <section className={styles.listHeader}>
                 <h5>#</h5>
                 <h5>Name</h5>
+
                 <section className={styles.marketValues}>
                     <h5>Price</h5>
                     <h5 className={styles.percentage}>24h %</h5>
@@ -27,6 +29,6 @@ export const CoinsListComponent = () => {
             {
                 coins.map(coin => <Coin coin={coin} key={coin.id}/>)
             }
-        </div>
+        </section>
     );
 };
