@@ -75,3 +75,51 @@ p {
 .ant-input::placeholder {
     color: #A4A4A4;
 }
+
+.ant-pagination .ant-pagination-item-active a {
+    color: #e1f0f3;
+}
+
+.ant-pagination .ant-pagination-item-active {
+    background-color: #555555;
+}
+
+.ant-pagination .ant-pagination-item-active:hover a {
+    color: #e1f0f3;
+}
+
+.ant-pagination .ant-pagination-item a {
+    color: #e1f0f3;
+}
+
+.ant-pagination .ant-pagination-prev button {
+    color: #e1f0f3;
+}
+
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
+    color: #555555;
+}
+
+.ant-pagination .ant-pagination-next button {
+    color: #e1f0f3;
+}
+
+.ant-pagination .ant-pagination-disabled:hover .ant-pagination-item-link {
+    color: #555555;
+}
+
+.ant-pagination .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis {
+    color: #555555;
+}
+
+.ant-pagination .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+    color: #555555;
+}
+
+.ant-select-dropdown {
+    background-color: #1E1E1E;
+}
+
+.ant-select-dropdown .ant-select-item {
+    color: #A4A4A4;
+}

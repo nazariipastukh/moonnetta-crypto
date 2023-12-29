@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import {Pagination} from "antd";
 
 import {coinsService} from "../../services";
 import {Coin} from "./ListElement";
@@ -12,6 +13,7 @@ export const CoinsListComponent = () => {
         coinsService.getAll().then(({data}) => setCoins(data))
     }, [])
 
+    let onShowSizeChange;
     return (
         <section className={styles.listWrapper}>
             <section className={styles.listHeader}>
@@ -26,9 +28,19 @@ export const CoinsListComponent = () => {
                     <h5 className={styles.supply}>Circulating Supply</h5>
                 </section>
             </section>
+
             {
                 coins.map(coin => <Coin coin={coin} key={coin.id}/>)
             }
+
+            <section className={styles.pagination}>
+                <Pagination
+                    showSizeChanger
+                    onShowSizeChange={onShowSizeChange}
+                    defaultCurrent={3}
+                    total={500}
+                />
+            </section>
         </section>
     );
 };
