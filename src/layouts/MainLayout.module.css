@@ -1,3 +1,12 @@
 .mainLayout {
     display: flex;
 }
+
+.page{
+    width: 80vw;
+    position: relative;
+    left: 18vw;
+    margin: 0 0 2.5vh 0;
+    background-color: black;
+    border-radius: 25px;
+}

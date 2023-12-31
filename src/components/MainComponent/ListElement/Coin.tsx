@@ -2,6 +2,7 @@ import {FC} from "react";
 
 import {ICoin} from "../../../interfaces";
 import styles from './Coin.module.css'
+import {NavLink} from "react-router-dom";
 
 interface IProps {
     coin: ICoin
@@ -22,7 +23,7 @@ export const Coin: FC<IProps> = ({coin}) => {
     } = coin
 
     return (
-        <section className={styles.coinWrapper}>
+        <NavLink to={`/coin/${id}`} className={styles.coinWrapper}>
             <section className={styles.naming}>
                 <p className={styles.rank}>
                     {market_cap_rank}
@@ -62,6 +63,6 @@ export const Coin: FC<IProps> = ({coin}) => {
                     {circulating_supply.toLocaleString('en-US')} {symbol.toUpperCase()}
                 </p>
             </section>
-        </section>
+        </NavLink>
     );
 };

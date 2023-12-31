@@ -10,7 +10,9 @@ export const MainLayout = () => {
 
             <section className={styles.mainLayout}>
                 <SideBar/>
-                <Outlet/>
+                <section className={styles.page}>
+                    <Outlet/>
+                </section>
             </section>
         </section>
     );
