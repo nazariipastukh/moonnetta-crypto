@@ -2,7 +2,7 @@ import {FC} from "react";
 
 import {ICoin} from "../../../interfaces";
 import styles from './Coin.module.css'
-import {NavLink} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 interface IProps {
     coin: ICoin
@@ -22,8 +22,10 @@ export const Coin: FC<IProps> = ({coin}) => {
         circulating_supply,
     } = coin
 
+    const navigate = useNavigate()
+
     return (
-        <NavLink to={`/coin/${id}`} className={styles.coinWrapper}>
+        <section onClick={() => navigate(`/coin/${id}`, {state: coin})} className={styles.coinWrapper}>
             <section className={styles.naming}>
                 <p className={styles.rank}>
                     {market_cap_rank}
@@ -63,6 +65,6 @@ export const Coin: FC<IProps> = ({coin}) => {
                     {circulating_supply.toLocaleString('en-US')} {symbol.toUpperCase()}
                 </p>
             </section>
-        </NavLink>
+        </section>
     );
 };

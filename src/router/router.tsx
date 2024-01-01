@@ -14,7 +14,7 @@ const router = createBrowserRouter([
                 element: <Navigate to={'/main'}/>
             },
             {
-                path: 'coin/:id',
+                path: '/coin/:id',
                 element: <CoinPage/>
             },
             {
