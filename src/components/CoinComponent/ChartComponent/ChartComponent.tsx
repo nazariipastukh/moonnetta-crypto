@@ -5,10 +5,7 @@ import {
     CategoryScale,
     LinearScale,
     PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend,
+    LineElement
 } from 'chart.js';
 
 interface IProps {
@@ -22,17 +19,7 @@ export const ChartComponent: FC<IProps> = ({labels, chartData}) => {
         LinearScale,
         PointElement,
         LineElement,
-        Title,
-        Tooltip,
-        Legend
     );
-
-    const options = {
-        responsive: true,
-        plugins: {
-
-        },
-    };
 
     const data = {
         labels,
@@ -46,6 +33,6 @@ export const ChartComponent: FC<IProps> = ({labels, chartData}) => {
     };
 
     return (
-        <Line options={options} data={data}/>
+        <Line data={data}/>
     )
 }

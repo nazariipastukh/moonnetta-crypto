@@ -19,38 +19,41 @@ import styles from './SideBar.module.css'
 export const SideBar = () => {
     return (
         <section className={styles.sideBar}>
-            <NavLink className={styles.sideLink} to={'/main'}>
-                <img className={styles.icon} src={coinIcon} alt={'icon'}/>
-                Cryptocurrencies
-            </NavLink>
-            <NavLink className={styles.sideLink} to={'/'}>
-                <img className={styles.icon} src={categoriesIcon} alt={'icon'}/>
-                Categories
-            </NavLink>
-            <NavLink className={styles.sideLink} to={'/trending'}>
-                <img className={styles.icon} src={trendIcon} alt={'icon'}/>
-                Trending Coins
-            </NavLink>
-            <NavLink className={styles.sideLink} to={'/'}>
-                <img className={styles.icon} src={exchangeIcon} alt={'icon'}/>
-                Exchanges
-            </NavLink>
-            <NavLink className={styles.sideLink} to={'/'}>
-                <img className={styles.icon} src={toIcon} alt={'icon'}/>
-                BTC to Currency
-            </NavLink>
-            <NavLink className={styles.sideLink} to={'/'}>
-                <img className={styles.icon} src={derIcon} alt={'icon'}/>
-                Derivatives
-            </NavLink>
-            <NavLink className={styles.sideLink} to={'/nft'}>
-                <img className={styles.icon} src={nftIcon} alt={'icon'}/>
-                NFT Collections
-            </NavLink>
-            <NavLink className={styles.sideLink} to={'/'}>
-                <img className={styles.icon} src={holdingsIcon} alt={'icon'}/>
-                Companies Holdings
-            </NavLink>
+            <section className={styles.pages}>
+                <NavLink to={'/main'}>
+                    <img className={styles.icon} src={coinIcon} alt={'icon'}/>
+                    Cryptocurrencies
+                </NavLink>
+                <NavLink to={'/'}>
+                    <img className={styles.icon} src={categoriesIcon} alt={'icon'}/>
+                    Categories
+                </NavLink>
+                <NavLink to={'/trending'}>
+                    <img className={styles.icon} src={trendIcon} alt={'icon'}/>
+                    Trending Coins
+                </NavLink>
+                <NavLink to={'/'}>
+                    <img className={styles.icon} src={exchangeIcon} alt={'icon'}/>
+                    Exchanges
+                </NavLink>
+                <NavLink to={'/'}>
+                    <img className={styles.icon} src={toIcon} alt={'icon'}/>
+                    BTC to Currency
+                </NavLink>
+                <NavLink to={'/'}>
+                    <img className={styles.icon} src={derIcon} alt={'icon'}/>
+                    Derivatives
+                </NavLink>
+                <NavLink to={'/nft'}>
+                    <img className={styles.icon} src={nftIcon} alt={'icon'}/>
+                    NFT Collections
+                </NavLink>
+                <NavLink to={'/'}>
+                    <img className={styles.icon} src={holdingsIcon} alt={'icon'}/>
+                    Companies Holdings
+                </NavLink>
+            </section>
+
 
             <section className={styles.credits}>
                 <p>
@@ -75,7 +78,8 @@ export const SideBar = () => {
                     </a>
                 </section>
                 <p className={styles.footer}>
-                    © 2023 Data provided by <a href={'https://www.coingecko.com/api/documentation'}>CoinGecko</a>
+                    © 2023 Data provided by <a href={'https://www.coingecko.com/api/documentation'} target="_blank"
+                                               rel="noreferrer">CoinGecko</a>
                 </p>
             </section>
         </section>

@@ -6,9 +6,10 @@
     text-decoration: none;
     color: #e1f0f3;
     width: 78vw;
+    cursor: pointer;
 }
 
-.coinWrapper:hover{
+.coinWrapper:hover {
     background-color: #111111;
 }
 

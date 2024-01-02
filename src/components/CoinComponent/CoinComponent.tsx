@@ -14,10 +14,17 @@ export const CoinComponent: FC<IProps> = ({coin}) => {
 
     useEffect(() => {
         chartService(id).then(({data}) => {
-            setChartData(data.prices);
+            setChartData(data.prices.slice(0, 30));
 
-            const mapTime = data.prices.map((element: number[]) => element[0]);
-            setTime(mapTime);
+            const mapTime = data.prices.map((element: number[]) => {
+                const date = new Date(element[0]);
+                const hours = date.getUTCHours() >= 10 ? date.getUTCHours() : `0${date.getUTCHours()}`
+                const minutes = date.getUTCMinutes() >= 10 ? date.getUTCMinutes() : `0${date.getUTCMinutes()}`
+
+                return `${hours}:${minutes}`;
+            });
+
+            setTime(mapTime.slice(0, 30));
         });
     }, [id]);
 
