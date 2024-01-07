@@ -5,7 +5,8 @@ import {
     CategoryScale,
     LinearScale,
     PointElement,
-    LineElement
+    LineElement,
+    Tooltip,
 } from 'chart.js';
 
 interface IProps {
@@ -19,6 +20,7 @@ export const ChartComponent: FC<IProps> = ({labels, chartData}) => {
         LinearScale,
         PointElement,
         LineElement,
+        Tooltip,
     );
 
     const data = {
@@ -28,11 +30,37 @@ export const ChartComponent: FC<IProps> = ({labels, chartData}) => {
                 data: chartData,
                 borderColor: 'rgb(255, 99, 132)',
                 backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                pointRadius: 3, // Set point radius to 2
+                pointBackgroundColor: "rgba(0, 0, 0, 0)",
+                pointBorderColor: "rgba(0, 0, 0, 0)"
             },
         ],
     };
 
+    const options = {
+        responsive: true,
+        plugins: {
+            tooltip: {
+                displayColors: false,
+                callbacks: {
+                    label: function (context: any) {
+                        const label = context.parsed.y.toFixed(2);
+                        return "$" + label;
+                    },
+                },
+            },
+        },
+        scales: {
+            x: {
+                display: false, // Hide x-axis labels
+            },
+            y: {
+                display: true, // You can set this to false to hide y-axis labels if needed
+            },
+        },
+    };
+
     return (
-        <Line data={data}/>
+        <Line data={data} options={options}/>
     )
 }
